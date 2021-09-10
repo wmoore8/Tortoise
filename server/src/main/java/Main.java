@@ -22,12 +22,18 @@ public class Main {
 
         //TODO: Return JSON containing the candies for which the stock is less than 25% of it's capacity
         get("/low-stock", (request, response) -> {
-            return null;
+
+            InventoryExcelReadIn inventoryExcel = new InventoryExcelReadIn();
+
+            return inventoryExcel.getLowStockCandy();
         });
 
         //TODO: Return JSON containing the total cost of restocking candy
         post("/restock-cost", (request, response) -> {
-            return null;
+
+            InventoryExcelReadIn inventoryExcel = new InventoryExcelReadIn();
+
+            return inventoryExcel.getRestockCost(request.body());
         });
 
     }

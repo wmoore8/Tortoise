@@ -65,6 +65,16 @@ thead {
   text-align: left;
   background-color: #02a3e8;
   color: #fff;
+
+}
+
+tbody {
+  text-align: left;
+  color: black;
+}
+
+.item-row {
+  width: 100%;
 }
 
 tr:nth-child(even) {
